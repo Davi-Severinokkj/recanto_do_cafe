@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/forms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" href="img/logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <script src="../assets/scripts/script.js"></script>
+    <title>Recanto do Café | Home</title>
+</head>
 
-<?php
-
-include("includes/head.php");
-include ("includes/header.php");
-?>
 
 <body>
+<header>
+    <div class="logo">
+        <a href="index.php">
+            <img src="img/logo.png" alt="Recanto do Café">
+        </a>
+    </div>
+
+
+    <nav>
+        <ul>
+            <li><a href="suporte.php">Suporte</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="form">
+        <button>
+            <a href="form_login.php">Login</a>
+        </button>
+        <button>
+            <a href="form_register.php">Registre-se</a>
+        </button>
+    </div>
+
+    <div class="modal">
+        <button class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+</header>
 <section class="hero">
 
     <div class="hero-conteudo">
@@ -193,11 +235,49 @@ include ("includes/header.php");
 
 </section>
 
-<?php
+<footer>
 
-include('includes/footer.php');
+    <div class="footer-conteudo">
 
-?>
+        <div class="footer-info">
+
+            <h3>Recanto do Café</h3>
+
+            <p>
+                Café, sabor e momentos especiais para o seu dia.
+            </p>
+
+            <span>
+                    &copy; 2026 Recanto do Café • Todos os direitos reservados.
+                </span>
+
+        </div>
+
+        <div class="footer-redes">
+
+            <h4>Nos acompanhe</h4>
+
+            <div class="redes">
+
+                <a href="#" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
 
 
 <script src="../assets/scripts/script.js"></script>
