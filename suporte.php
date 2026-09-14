@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo"><a href="index.php"><img src="img/logo.png" alt="Recanto do Café"></a></div>
+            <div class="logo"><a href="index.html"><img src="img/logo.png" alt="Recanto do Café"></a></div>
             <nav>
                 <ul>
                     <li><a href="servicos.html">Serviços</a></li>

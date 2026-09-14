@@ -21,7 +21,7 @@ include("includes/head.php");
 <header>
 
     <div class="logo">
-        <a href="index.php">
+        <a href="index.html">
             <img src="img/logo.png" alt="Recanto do Café">
         </a>
     </div>

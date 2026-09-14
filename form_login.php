@@ -12,7 +12,7 @@ include("includes/head.php");
 
     <div class="logo">
 
-        <a href="index.php">
+        <a href="index.html">
 
             <img
                     src="img/logo.png"
