@@ -1,15 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/style.css">
-    <link rel="stylesheet" href="assets/styles/forms.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="icon" href="img/logo.png">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-    <title>Recanto do Café | Home</title>
-</head>
+<?php
+include("includes/head.php");
+?>
 
 
 <body>
@@ -21,14 +14,16 @@
     </div>
 
 
-    <nav>
-        <ul>
-            <li><a href="suporte.php">Suporte</a></li>
-            <li><a href="servicos.html">Serviços</a></li>
-            <li><a href="sobre.html">Sobre nós</a></li>
-            <li><a href="clientes.html">Clientes</a></li>
-        </ul>
-    </nav>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a href="suporte.php">Suporte</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+            </ul>
+        </nav>
+    </div>
 
 
     <div class="form">
@@ -44,6 +39,27 @@
         <button class="menu-btn">
             <i class="fa-solid fa-bars"></i>
         </button>
+    </div>
+
+    <div class="menuDropDown">
+        <nav>
+            <ul>
+                <li><a href="suporte.php">Suporte</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="form">
+            <button>
+                <a href="form_login.php">Login</a>
+            </button>
+            <button>
+                <a href="form_register.php">Registre-se</a>
+            </button>
+        </div>
     </div>
 
 </header>
@@ -276,7 +292,7 @@
 </footer>
 
 
-<script src="../assets/scripts/script.js"></script>
+<script src="assets/scripts/script.js"></script>
 
 </body>
 
