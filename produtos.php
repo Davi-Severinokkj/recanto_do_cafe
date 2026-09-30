@@ -1,13 +1,16 @@
+
+
 <?php
-include ("includes/head.php");
+include("includes/head.php");
 include ("includes/header.php");
+
 
 try {
     $connect = new mysqli("localhost", "root", "Seemg@1222017", "recanto_do_cafe");
     $connect->set_charset("utf8");
 
     // 1. DEFINIÇÕES DA PAGINAÇÃO
-    $itens_por_pagina = 6; // Altere aqui a quantidade de produtos por página
+    $itens_por_pagina = 8; // Altere aqui a quantidade de produtos por página
     $pagina_atual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
     if ($pagina_atual < 1) $pagina_atual = 1;
 
@@ -34,6 +37,8 @@ try {
 } catch (Exception $e) {
     die("Erro ao conectar com o banco de dados: " . $e->getMessage());
 }
+
+
 ?>
 
 <style>
@@ -188,14 +193,26 @@ try {
 <body>
 
 <main>
+
+    <section>
+        <div class="search_container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <form action="produtos.php" method="GET">
+                <input type="text" name="id_produtos" id="id_produtos" placeholder="Pesquisar...">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </section>
+
     <h1>Nossos Produtos</h1>
 
     <div class="vitrine-container">
-
+        <?php include("functions/select_search.php"); ?>
         <?php if (!empty($produtos)): ?>
             <?php foreach ($produtos as $item): ?>
                 <div class="produto-card">
-                    <img src="<?= htmlspecialchars($item['imagem']);?>" alt="<?= htmlspecialchars($item['nome']) ?>" class="produto-imagem">
+                    <img src="<?= htmlspecialchars($item['imagem']); ?>" alt="<?= htmlspecialchars($item['nome']) ?>"
+                         class="produto-imagem">
                     <div class="produto-info">
                         <span class="produto-categoria"><?= htmlspecialchars($item['categoria']) ?></span>
                         <h3 class="produto-nome"><?= htmlspecialchars($item['nome']) ?></h3>
@@ -242,3 +259,5 @@ try {
 </main>
 
 </body>
+
+<?php include ("includes/footer.php");?>

@@ -1,0 +1,394 @@
+/* =========================================================
+   RESPONSIVO - TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    nav ul {
+        gap: 25px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .sobre-conteudo,
+    .servicos-conteudo,
+    .clientes-conteudo {
+        padding: 40px;
+    }
+
+    .suporte-conteudo {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .contato-item {
+        justify-content: center;
+    }
+
+    .apps {
+        justify-content: center;
+    }
+}
+
+/* =========================================================
+   RESPONSIVO - CELULAR
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        padding: 12px 18px;
+    }
+
+    .logo img {
+        width: 75px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .form button {
+        display: none;
+    }
+
+
+    /* HERO */
+    .hero {
+        min-height: auto;
+        padding: 40px 18px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .hero-botoes {
+        flex-direction: column;
+        gap: 12px;
+
+        margin-bottom: 35px;
+    }
+
+    .btn-principal,
+    .btn-secundario {
+        width: 100%;
+
+        padding: 14px 20px;
+
+        text-align: center;
+    }
+
+    .hero-info {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .hero-info h2 {
+        font-size: 26px;
+    }
+
+
+    /* SERVIÇOS HOME */
+    .servicos {
+        grid-template-columns: 1fr;
+
+        padding: 30px 16px;
+        gap: 18px;
+    }
+
+    .card img {
+        height: 170px;
+    }
+
+    .texto {
+        padding: 18px;
+    }
+
+    .texto h2 {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .texto p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+
+    /* CARDÁPIO */
+    .cardapio {
+        padding: 35px 18px;
+    }
+
+    .cardapio h1 {
+        font-size: 28px;
+    }
+
+    .cardapio p {
+        font-size: 13px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .galeria img {
+        height: 120px;
+    }
+
+    .btn-cardapio {
+        padding: 12px 20px;
+        font-size: 12px;
+    }
+
+
+    /* SOBRE */
+    .sobre {
+        padding: 35px 18px;
+    }
+
+    .sobre-conteudo {
+        padding: 20px 0;
+
+        flex-direction: column;
+        gap: 30px;
+
+        text-align: center;
+    }
+
+    .sobre-imagem img {
+        width: 100%;
+        max-width: 320px;
+        margin: auto;
+    }
+
+    .sobre-texto h1 {
+        font-size: 34px;
+    }
+
+    .sobre-texto p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .sobre-destaques {
+        justify-content: center;
+    }
+
+    .destaque {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    /* SUPORTE */
+    .suporte-conteudo {
+        padding: 35px 18px;
+
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .suporte-esquerda {
+        width: 100%;
+        margin: 0;
+        padding: 30px 20px;
+    }
+
+    .suporte-direita img {
+        width: 100%;
+    }
+
+    .suporte h1 {
+        font-size: 32px;
+    }
+
+    .suporte p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .contato-item {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .apps {
+        justify-content: center;
+    }
+
+
+    /* PÁGINA SERVIÇOS */
+    .pagina-servicos {
+        padding: 35px 18px;
+    }
+
+    .servicos-conteudo {
+        padding: 20px 0;
+    }
+
+    .titulo-servicos {
+        margin-bottom: 40px;
+    }
+
+    .titulo-servicos h1 {
+        font-size: 34px;
+    }
+
+    .titulo-servicos p {
+        font-size: 15px;
+    }
+
+    .cards-servicos {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .servico-card img {
+        height: 200px;
+    }
+
+    .servico-info {
+        padding: 25px;
+    }
+
+    .servico-info h2 {
+        font-size: 27px;
+    }
+
+
+    /* CLIENTES */
+    .clientes {
+        padding: 35px 18px;
+    }
+
+    .clientes-conteudo {
+        padding: 20px 0;
+    }
+
+    .titulo-clientes h1 {
+        font-size: 30px;
+    }
+
+    .titulo-clientes p {
+        font-size: 14px;
+    }
+
+    .estatisticas {
+        gap: 35px;
+        margin: 40px 0;
+    }
+
+    .numero h2 {
+        font-size: 38px;
+    }
+
+    .depoimentos {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .depoimento {
+        padding: 20px;
+    }
+
+    .depoimento p {
+        font-size: 14px;
+    }
+
+
+    /* FOOTER */
+    footer {
+        padding: 25px 18px;
+    }
+
+    .footer-conteudo {
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .footer-redes {
+        text-align: center;
+    }
+
+    .redes {
+        justify-content: center;
+    }
+
+    .footer-info p {
+        font-size: 13px;
+    }
+
+    .footer-info span {
+        font-size: 12px;
+    }
+
+
+    /* MODAL */
+    .modal {
+        width: 280px;
+    }
+}
+
+
+/* =========================================================
+   CELULARES PEQUENOS
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cardapio h1,
+    .titulo-servicos h1,
+    .titulo-clientes h1 {
+        font-size: 26px;
+    }
+
+    .galeria img {
+        height: 100px;
+    }
+
+    .servico-info h2 {
+        font-size: 24px;
+    }
+
+    .contato-item i {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .apps a {
+        width: 52px;
+        height: 52px;
+        font-size: 23px;
+    }
+}
