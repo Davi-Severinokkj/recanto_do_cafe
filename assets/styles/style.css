@@ -5,7 +5,7 @@
        ========================================================= */
 
 
-    /* =========================================================
+/* =========================================================
        VARIÁVEIS
        ========================================================= */
 
@@ -100,6 +100,8 @@ header {
     gap: 30px;
 
     background: var(--marrom-escuro);
+
+    border-bottom: 1px solid var(--dourado);
 }
 
 
@@ -187,14 +189,14 @@ header {
 
 /* FORM DESKTOP */
 
-header > .form {
+header>.form {
     display: flex;
     align-items: center;
 
     gap: 10px;
 }
 
-header > .form button {
+header>.form button {
     border: 1px solid var(--dourado);
 
     border-radius: 8px;
@@ -206,35 +208,35 @@ header > .form button {
     cursor: pointer;
 
     transition:
-            background var(--transicao),
-            color var(--transicao),
-            transform var(--transicao);
+        background var(--transicao),
+        color var(--transicao),
+        transform var(--transicao);
 }
 
-header > .form button a {
+header>.form button a {
     color: var(--dourado);
 
     font-size: 14px;
     font-weight: 600;
 }
 
-header > .form button:last-child {
+header>.form button:last-child {
     background: var(--dourado);
 }
 
-header > .form button:last-child a {
+header>.form button:last-child a {
     color: var(--marrom-escuro);
 }
 
-header > .form button:hover {
+header>.form button:hover {
     transform: translateY(-2px);
 }
 
-header > .form button:first-child:hover {
+header>.form button:first-child:hover {
     background: var(--dourado);
 }
 
-header > .form button:first-child:hover a {
+header>.form button:first-child:hover a {
     color: var(--marrom-escuro);
 }
 
@@ -268,8 +270,8 @@ header > .form button:first-child:hover a {
     cursor: pointer;
 
     transition:
-            background var(--transicao),
-            color var(--transicao);
+        background var(--transicao),
+        color var(--transicao);
 }
 
 .menu-btn:hover {
@@ -327,13 +329,11 @@ header > .form button:first-child:hover a {
     overflow: hidden;
 
     background:
-            linear-gradient(
-                    90deg,
-                    rgba(33, 20, 8, .98) 0%,
-                    rgba(33, 20, 8, .90) 45%,
-                    rgba(33, 20, 8, .70) 100%
-            ),
-            url("../../img/café.png") center / cover no-repeat;
+        linear-gradient(90deg,
+            rgba(33, 20, 8, .98) 0%,
+            rgba(33, 20, 8, .90) 45%,
+            rgba(33, 20, 8, .70) 100%),
+        url("../../img/café.png") center / cover no-repeat;
     background: fixed;
 
     color: var(--branco);
@@ -403,7 +403,7 @@ header > .form button:first-child:hover a {
 }
 
 
-.hero-conteudo > p {
+.hero-conteudo>p {
     max-width: 680px;
 
     margin-bottom: 35px;
@@ -443,9 +443,9 @@ header > .form button:first-child:hover a {
     font-weight: 600;
 
     transition:
-            transform var(--transicao),
-            background var(--transicao),
-            color var(--transicao);
+        transform var(--transicao),
+        background var(--transicao),
+        color var(--transicao);
 }
 
 .btn-principal {
@@ -486,7 +486,7 @@ header > .form button:first-child:hover a {
     gap: 55px;
 }
 
-.hero-info > div {
+.hero-info>div {
     display: flex;
     flex-direction: column;
 
@@ -517,12 +517,12 @@ header > .form button:first-child:hover a {
 
     padding: 90px 7%;
 
-    background: var(--creme-claro);
+    background: var(--marrom-escuro);
 }
 
 
 .card {
-    width: min(1200px, 100%);
+    width: 75%;
 
     min-height: 330px;
 
@@ -540,8 +540,8 @@ header > .form button:first-child:hover a {
     box-shadow: var(--sombra);
 
     transition:
-            transform var(--transicao),
-            box-shadow var(--transicao);
+        transform var(--transicao),
+        box-shadow var(--transicao);
 }
 
 .card:last-child {
@@ -613,11 +613,9 @@ header > .form button:first-child:hover a {
     padding: 100px 7%;
 
     background:
-            linear-gradient(
-                    135deg,
-                    var(--marrom-escuro),
-                    var(--marrom)
-            );
+        linear-gradient(135deg,
+            var(--marrom-escuro),
+            var(--marrom));
 
     color: var(--branco);
 }
@@ -655,7 +653,7 @@ header > .form button:first-child:hover a {
 }
 
 
-.conteudo-cardapio > p {
+.conteudo-cardapio>p {
     max-width: 750px;
 
     margin: 0 auto 45px;
@@ -690,8 +688,8 @@ header > .form button:first-child:hover a {
     border-radius: 15px;
 
     transition:
-            transform var(--transicao),
-            opacity var(--transicao);
+        transform var(--transicao),
+        opacity var(--transicao);
 }
 
 
@@ -721,8 +719,8 @@ header > .form button:first-child:hover a {
     font-weight: 700;
 
     transition:
-            transform var(--transicao),
-            background var(--transicao);
+        transform var(--transicao),
+        background var(--transicao);
 }
 
 
@@ -742,12 +740,7 @@ header > .form button:first-child:hover a {
 
     text-align: center;
 
-    background:
-            linear-gradient(
-                    135deg,
-                    var(--marrom-escuro),
-                    var(--marrom)
-            );
+    background-color: var(--marrom);
 
     color: var(--branco);
 }
@@ -792,7 +785,7 @@ header > .form button:first-child:hover a {
     align-items: center;
     justify-content: center;
 
-    background: var(--creme-claro);
+    background-color: var(--marrom);
 }
 
 
@@ -825,7 +818,7 @@ header > .form button:first-child:hover a {
 }
 
 
-.suporte-esquerda > p {
+.suporte-esquerda>p {
     max-width: 700px;
 
     margin-bottom: 40px;
@@ -932,8 +925,8 @@ header > .form button:first-child:hover a {
     font-size: 20px;
 
     transition:
-            transform var(--transicao),
-            background var(--transicao);
+        transform var(--transicao),
+        background var(--transicao);
 }
 
 
@@ -955,7 +948,7 @@ header > .form button:first-child:hover a {
 
     padding: 100px 7%;
 
-    background: var(--creme-claro);
+    background: var(--marrom);
 }
 
 
@@ -979,7 +972,7 @@ header > .form button:first-child:hover a {
 
 
 .sobre-imagem img {
-    width: 100%;
+    width: 80%;
 
     min-height: 500px;
 
@@ -1004,7 +997,7 @@ header > .form button:first-child:hover a {
 .sobre-texto h1 {
     margin-bottom: 25px;
 
-    color: var(--marrom-escuro);
+    color: var(--creme);
 
     font-size: 50px;
 
@@ -1015,7 +1008,7 @@ header > .form button:first-child:hover a {
 .sobre-texto p {
     margin-bottom: 18px;
 
-    color: var(--texto-claro);
+    color: var(--branco);
 
     font-size: 16px;
 
@@ -1078,7 +1071,7 @@ header > .form button:first-child:hover a {
 .servicos-conteudo {
     padding: 100px 7%;
 
-    background: var(--creme-claro);
+    background: var(--marrom-medio);
 }
 
 
@@ -1099,7 +1092,7 @@ header > .form button:first-child:hover a {
 .titulo-servicos h1 {
     margin-bottom: 20px;
 
-    color: var(--marrom-escuro);
+    color: var(--creme);
 
     font-size: 52px;
 
@@ -1108,7 +1101,7 @@ header > .form button:first-child:hover a {
 
 
 .titulo-servicos p {
-    color: var(--texto-claro);
+    color: var(--creme-claro);
 
     font-size: 16px;
 
@@ -1139,8 +1132,8 @@ header > .form button:first-child:hover a {
     box-shadow: var(--sombra);
 
     transition:
-            transform var(--transicao),
-            box-shadow var(--transicao);
+        transform var(--transicao),
+        box-shadow var(--transicao);
 }
 
 
@@ -1151,7 +1144,7 @@ header > .form button:first-child:hover a {
 }
 
 
-.servico-card > img {
+.servico-card>img {
     width: 100%;
     height: 280px;
 
@@ -1164,7 +1157,7 @@ header > .form button:first-child:hover a {
 }
 
 
-.servico-info > i {
+.servico-info>i {
     width: 70px;
     height: 70px;
 
@@ -1258,8 +1251,8 @@ header > .form button:first-child:hover a {
     font-weight: 600;
 
     transition:
-            transform var(--transicao),
-            background var(--transicao);
+        transform var(--transicao),
+        background var(--transicao);
 }
 
 
@@ -1279,7 +1272,7 @@ header > .form button:first-child:hover a {
 .clientes-conteudo {
     padding: 100px 7%;
 
-    background: var(--creme-claro);
+    background: var(--marrom);
 }
 
 
@@ -1300,7 +1293,7 @@ header > .form button:first-child:hover a {
 .titulo-clientes h1 {
     margin-bottom: 20px;
 
-    color: var(--marrom-escuro);
+    color: var(--creme);
 
     font-size: 52px;
 
@@ -1553,9 +1546,9 @@ footer {
     font-size: 18px;
 
     transition:
-            background var(--transicao),
-            color var(--transicao),
-            transform var(--transicao);
+        background var(--transicao),
+        color var(--transicao),
+        transform var(--transicao);
 }
 
 
@@ -1587,7 +1580,7 @@ footer {
     }
 
     .nav,
-    header > .form {
+    header>.form {
         display: none;
     }
 
@@ -1632,9 +1625,9 @@ footer {
         transform: translateY(-15px);
 
         transition:
-                opacity .3s ease,
-                visibility .3s ease,
-                transform .3s ease;
+            opacity .3s ease,
+            visibility .3s ease,
+            transform .3s ease;
 
         z-index: 10001;
     }
@@ -1740,7 +1733,7 @@ footer {
         font-size: 48px;
     }
 
-    .hero-conteudo > p {
+    .hero-conteudo>p {
         font-size: 16px;
     }
 
@@ -1820,7 +1813,7 @@ footer {
         padding: 70px 6%;
     }
 
-    .conteudo-cardapio > p {
+    .conteudo-cardapio>p {
         font-size: 15px;
     }
 
@@ -1868,7 +1861,7 @@ footer {
         font-size: 40px;
     }
 
-    .suporte-esquerda > p {
+    .suporte-esquerda>p {
         font-size: 17px;
     }
 
@@ -2057,7 +2050,7 @@ footer {
         letter-spacing: -.5px;
     }
 
-    .hero-conteudo > p {
+    .hero-conteudo>p {
         font-size: 14px;
 
         line-height: 1.7;
@@ -2114,7 +2107,7 @@ footer {
         font-size: 30px;
     }
 
-    .conteudo-cardapio > p {
+    .conteudo-cardapio>p {
         font-size: 14px;
 
         line-height: 1.7;
@@ -2176,7 +2169,7 @@ footer {
         font-size: 31px;
     }
 
-    .suporte-esquerda > p {
+    .suporte-esquerda>p {
         font-size: 15px;
 
         line-height: 1.7;
@@ -2288,7 +2281,7 @@ footer {
         border-radius: 18px;
     }
 
-    .servico-card > img {
+    .servico-card>img {
         height: 220px;
     }
 
@@ -2296,7 +2289,7 @@ footer {
         padding: 25px 20px;
     }
 
-    .servico-info > i {
+    .servico-info>i {
         width: 60px;
         height: 60px;
 
@@ -2507,7 +2500,7 @@ footer {
         font-size: 28px;
     }
 
-    .suporte-esquerda > p {
+    .suporte-esquerda>p {
         font-size: 14px;
     }
 
@@ -2545,7 +2538,7 @@ footer {
         font-size: 14px;
     }
 
-    .servico-card > img {
+    .servico-card>img {
         height: 200px;
     }
 
@@ -2631,7 +2624,7 @@ footer {
         font-size: 28px;
     }
 
-    .hero-conteudo > p {
+    .hero-conteudo>p {
         font-size: 13px;
     }
 
@@ -2672,7 +2665,7 @@ footer {
         font-size: 24px;
     }
 
-    .conteudo-cardapio > p {
+    .conteudo-cardapio>p {
         font-size: 13px;
     }
 
@@ -2726,7 +2719,7 @@ footer {
         font-size: 25px;
     }
 
-    .suporte-esquerda > p {
+    .suporte-esquerda>p {
         font-size: 13px;
     }
 
@@ -2793,7 +2786,7 @@ footer {
         font-size: 13px;
     }
 
-    .servico-card > img {
+    .servico-card>img {
         height: 180px;
     }
 
@@ -2801,7 +2794,7 @@ footer {
         padding: 22px 16px;
     }
 
-    .servico-info > i {
+    .servico-info>i {
         width: 55px;
         height: 55px;
 

@@ -19,14 +19,7 @@ if (!isset($_SESSION['usuario_id'])) {
     2. CONECTAR AO BANCO
 */
 
-$connect = new mysqli(
-        "localhost",
-        "root",
-        "Seemg@1222017",
-        "recanto_do_cafe"
-);
-
-$connect->set_charset("utf8");
+require_once("includes/connect.php");
 
 
 /*
@@ -57,8 +50,8 @@ $stmt = $connect->prepare($sql);
 */
 
 $stmt->bind_param(
-        "i",
-        $id
+    "i",
+    $id
 );
 
 
@@ -93,7 +86,6 @@ include("includes/head.php");
 
 
 <style>
-
     /* =========================
        ÁREA PRINCIPAL
     ========================= */
@@ -113,12 +105,10 @@ include("includes/head.php");
         padding: 60px 20px;
 
         background:
-                linear-gradient(
-                        135deg,
-                        #211408,
-                        #412c16,
-                        #2b1a0d
-                );
+            linear-gradient(135deg,
+                #211408,
+                #412c16,
+                #2b1a0d);
 
         color: #fff;
 
@@ -255,7 +245,7 @@ include("includes/head.php");
         transform: translateY(-3px);
 
         box-shadow:
-                0 8px 20px rgba(0, 0, 0, 0.35);
+            0 8px 20px rgba(0, 0, 0, 0.35);
 
     }
 
@@ -298,130 +288,73 @@ include("includes/head.php");
         }
 
     }
-
 </style>
 
 <body>
 
 
-<header>
-
-    <div class="logo">
-
-        <a href="index.php">
-
-            <img
-                    src="img/logo.png"
-                    alt="Recanto do Café"
-            >
-
-        </a>
-
-    </div>
+    <?php include_once("includes/header.php"); ?>
 
 
-    <nav>
+    <main>
 
-        <ul>
+        <div class="my_account_content">
 
-            <li>
-                <a href="suporte.php">
-                    Suporte
-                </a>
-            </li>
+            <h1>
+                Minha conta
+            </h1>
 
-            <li>
-                <a href="servicos.html">
-                    Serviços
-                </a>
-            </li>
+            <p>
+                <strong>
+                    ID:
+                </strong>
 
-            <li>
-                <a href="sobre.html">
-                    Sobre nós
-                </a>
-            </li>
-
-            <li>
-                <a href="clientes.html">
-                    Clientes
-                </a>
-            </li>
-
-        </ul>
-
-    </nav>
+                <?= htmlspecialchars($usuario['id']) ?>
+            </p>
 
 
-    <span style="color: white;">
+            <p>
 
-        Olá,
+                <strong>
+                    Nome:
+                </strong>
 
-        <?= htmlspecialchars($_SESSION['nome']) ?>
+                <?= htmlspecialchars($usuario['nome']) ?>
 
-    </span>
-
-</header>
-
-
-<main>
-
-    <div class="my_account_content">
-
-        <h1>
-            Minha conta
-        </h1>
-
-        <p>
-            <strong>
-                ID:
-            </strong>
-
-            <?= htmlspecialchars($usuario['id']) ?>
-        </p>
+            </p>
 
 
-        <p>
+            <p>
 
-            <strong>
-                Nome:
-            </strong>
+                <strong>
+                    E-mail:
+                </strong>
 
-            <?= htmlspecialchars($usuario['nome']) ?>
+                <?= htmlspecialchars($usuario['email']) ?>
 
-        </p>
-
-
-        <p>
-
-            <strong>
-                E-mail:
-            </strong>
-
-            <?= htmlspecialchars($usuario['email']) ?>
-
-        </p>
+            </p>
 
 
-        <p>
+            <p>
 
-            <strong>
-                Telefone:
-            </strong>
+                <strong>
+                    Telefone:
+                </strong>
 
-            <?= htmlspecialchars($usuario['telefone']) ?>
+                <?= htmlspecialchars($usuario['telefone']) ?>
 
-        </p>
+            </p>
 
 
-        <a href="logout.php">
-            Sair
-        </a>
-    </div>
+            <a href="logout.php">
+                Sair
+            </a>
+        </div>
 
-</main>
+    </main>
 
-<?php  include ("includes/footer.php"); ?>
+    <?php include("includes/footer.php"); ?>
 
 </body>
+
 </html>

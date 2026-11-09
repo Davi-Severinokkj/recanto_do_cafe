@@ -87,14 +87,7 @@ $senha = password_hash(
 // CONECTAR AO BANCO
 // ==========================
 
-$connect = new mysqli(
-    "localhost",
-    "root",
-    "Seemg@1222017",
-    "recanto_do_cafe"
-);
-
-$connect->set_charset("utf8");
+require_once("includes/connect.php");
 
 
 // ==========================

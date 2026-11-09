@@ -6,14 +6,7 @@ $email = $_POST['email'] ?? '';
 $senha = $_POST['password'] ?? '';
 $erro_login = ""; // Criamos essa variável para guardar o erro se ele acontecer
 
-$connect = new mysqli(
-        "localhost",
-        "root",
-        "Seemg@1222017",
-        "recanto_do_cafe"
-);
-
-$connect->set_charset("utf8");
+require_once("includes/connect.php");
 
 $sql = "SELECT id, nome, senha, email, telefone
         FROM usuario
@@ -29,7 +22,7 @@ if ($usuario && password_verify($senha, $usuario['senha'])) {
     $_SESSION['usuario_id'] = $usuario['id'];
     $_SESSION['nome'] = $usuario['nome'];
 
-    header("Location: my_account.php");
+    header("Location: index.php");
     exit;
 } else {
     // Em vez de dar "echo" aqui em cima e quebrar o HTML, guardamos na variável
