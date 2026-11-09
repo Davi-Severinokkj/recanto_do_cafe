@@ -40,8 +40,6 @@ if ($usuario && password_verify($senha, $usuario['senha'])) {
 include("includes/head.php");
 ?>
 
-</head>
-
 <body>
 
 <header>
@@ -106,4 +104,3 @@ include("includes/footer.php");
 ?>
 <script src="assets/scripts/script.js"></script>
 </body>
-</html>
