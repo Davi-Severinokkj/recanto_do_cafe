@@ -132,6 +132,31 @@ header {
     transform: scale(1.03);
 }
 
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-conteudo {
+    flex: 1;
+}
+
+.hero-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-imagem img {
+    width: 100%;
+    margin: 0px;
+    max-width: 550px;
+    height: auto;
+    object-fit: contain;
+}
 
 /* NAV DESKTOP */
 
@@ -321,7 +346,7 @@ header>.form button:first-child:hover a {
 
     min-height: calc(100vh - 80px);
 
-    padding: 100px 7%;
+    padding: 40px 7%;
 
     display: flex;
     align-items: center;
@@ -2004,6 +2029,14 @@ footer {
 
     header {
         padding: 13px 5%;
+    }
+
+    .hero-imagem {
+        display: none;
+    }
+
+    .hero-imagem img {
+        display: none;
     }
 
     .logo img {

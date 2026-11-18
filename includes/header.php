@@ -28,6 +28,7 @@
         <div class="nav">
             <nav>
                 <ul>
+                    <li><a href="produtos.php">Cardápio</a></li>
                     <li><a href="suporte.php">Suporte</a></li>
                     <li><a href="servicos.php">Serviços</a></li>
                     <li><a href="sobre.php">Sobre nós</a></li>
@@ -116,6 +117,7 @@
         <div class="menuDropDown">
             <nav>
                 <ul>
+                    <li><a href="produtos.php">Cardápio</a></li>
                     <li><a href="suporte.php">Suporte</a></li>
                     <li><a href="servicos.php">Serviços</a></li>
                     <li><a href="sobre.php">Sobre nós</a></li>

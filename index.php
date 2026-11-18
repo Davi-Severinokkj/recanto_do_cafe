@@ -14,7 +14,7 @@ include("includes/head.php");
 <body>
 
     <?php include_once("includes/header.php"); ?>
-    
+
     <section class="hero">
 
         <div class="hero-conteudo">
@@ -80,6 +80,10 @@ include("includes/head.php");
 
             </div>
 
+        </div>
+
+        <div class="hero-imagem">
+            <img src="img/Café com Grãos e Vapor em Destaque.png" alt="Xícara de café especial com grãos">
         </div>
 
     </section>

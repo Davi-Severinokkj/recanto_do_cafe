@@ -1,4 +1,3 @@
-
 create database if not exists recanto_do_cafe ;
 use recanto_do_cafe;
 
